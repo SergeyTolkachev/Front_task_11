@@ -1,3 +1,5 @@
+@import 'reset';
+
 body {
     font-family: 'Robot Mono', monospace;
     margin: 0;
@@ -11,52 +13,45 @@ body {
 }
 
 .flex__section {
-    margin: 10px;
+    margin: 5px;
     padding: 5px;
-    border: 2px solid black;
-    @media (min-width: 581px){
+    border: 1px solid black;
+    @media (min-width: 581px) {
         display: flex;
         flex-wrap: wrap;
     }
-}
-
-.flex__section__blocks {
-
-    @media (min-width: 581px){
-        display: flex;
-        flex-wrap: wrap;
-        width: calc(70% - 5px);
-        margin-right: 5px;
-    }
-    
-    @media (min-width: 1024px) {
-        width: calc(80% - 5px);
-    }
-
-    div {
-        background-color: blueviolet;
-        min-height: 160px;
-        border: 1px solid black;
-        padding: 5px;
-
-        @media (min-width: 581px){
-            width: 100%;
+    &__blocks {
+        @media (min-width: 581px) {
+            display: flex;
+            flex-wrap: wrap;
+            width: calc(70% - 5px);
+            margin-right: 5px;
         }
         @media (min-width: 1024px) {
-            width: calc(100%/2 - 12px);
+            width: calc(80% - 5px);
         }
-    }  
-}
-
-aside {
+        div {
+            background-color: blueviolet;
+            min-height: 160px;
+            border: 1px solid black;
+            padding: 5px;
+            @media (min-width: 581px) {
+                width: 100%;
+            }
+            @media (min-width: 1024px) {
+                width: calc(100%/2);
+            }
+        }  
+    }
+    aside {
         background-color: cadetblue;
         padding: 5px;
         border: 1px solid black;
-
-        @media (min-width: 581px){
-            width: calc(30% - 12px);
+        @media (min-width: 581px) {
+            width: 30%;
         }
-        @media (min-width: 1024px){
-            width: calc(20% - 12px);
+        @media (min-width: 1024px) {
+            width: 20%;
         }     
+    }
 }

@@ -1,3 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 body {
   font-family: "Robot Mono", monospace;
   margin: 0;
@@ -11,9 +63,9 @@ body {
 }
 
 .flex__section {
-  margin: 10px;
+  margin: 5px;
   padding: 5px;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 @media (min-width: 581px) {
   .flex__section {
@@ -21,7 +73,6 @@ body {
     flex-wrap: wrap;
   }
 }
-
 @media (min-width: 581px) {
   .flex__section__blocks {
     display: flex;
@@ -48,22 +99,21 @@ body {
 }
 @media (min-width: 1024px) {
   .flex__section__blocks div {
-    width: calc(100%/2 - 12px);
+    width: calc(100%/2);
   }
 }
-
-aside {
+.flex__section aside {
   background-color: cadetblue;
   padding: 5px;
   border: 1px solid black;
 }
 @media (min-width: 581px) {
-  aside {
-    width: calc(30% - 12px);
+  .flex__section aside {
+    width: 30%;
   }
 }
 @media (min-width: 1024px) {
-  aside {
-    width: calc(20% - 12px);
+  .flex__section aside {
+    width: 20%;
   }
 }/*# sourceMappingURL=main.css.map */
